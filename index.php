@@ -14,7 +14,7 @@
     </main>
     <section class="features">
         <div class="features-text">
-            <h1>Features</h1>
+            <h1>Features</h1> 
             <hr>
             <p>Sed varius suspendisse dictum leo ipsum amet pellentesque fusce ac hendrerit consectetur tempor lorem ipsum</p>
         </div>
