@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --lora-font: "Lora", serif;
+    --poppins-font: "Poppins", sans-serif;
+    --main-dark-color: #212023;
+    --btn-color: #373737;
+    --root-padding: 0 12em;
+}
+
+.hidden {
+    transition:all .2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+}
+
+aside {
+    height:100vh;
+    width:100%;
+    position:fixed;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+}
+
+aside > .bgcolor {
+    z-index:2;
+    height:100vh;
+    width:100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position:fixed;
+}
+
+aside > ul {
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:10;
+    background-color:white;
+    color:grey;
+    font-family:var(--poppins-font);
+    height:100vh;
+    position:fixed;
+    width:20%;
+    text-align:center;
+}
+
+aside > ul > li {
+    list-style: none;
+    border-bottom:1px solid grey;
+    width:100%;
+    height:auto;
+    padding:1.5em 3em;
+    cursor:pointer;
+    transition:all .1s ease-in-out;
+    position:relative;
+}
+
+aside > ul > li > a {
+    text-decoration:none;
+    color:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .1s ease-in-out;
+    z-index:15;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+aside > ul > li:hover {
+    color:black;
+}
+
+aside > ul > .closebtn {
+    padding:0 1.5em;
+    justify-self:end;
+    font-size:2em;
+    transition:all .1s ease-in-out;
+    cursor:pointer;
+}
+
+aside > ul > .closebtn:hover {
+        color:black;
+}
+
+nav {
+    font-family:var(--poppins-font);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5em 12em;
+    text-transform:uppercase;
+    position:relative;
+    height:10vh;
+}
+
+nav > img {
+    cursor:pointer;
+}
+
+nav > hr {
+    width:78%;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    color:black;
+}
+
+.menu {
+    display:flex;
+    justify-content:center;
+    cursor:pointer;
+    align-items:center;
+}
+
+.menu > h1 {
+    font-weight:400;
+    font-size:1rem;
+    padding-right:1em;
+}
+
+.menu-bar {
+    height:20px;
+    width:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.menu-line {
+    margin:2px 0;
+    width:100%;
+    height:100%;
+    background-color:black;
+}
+
+main {
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+    padding:var(--root-padding);
+    height:90vh;
+}
+
+.hero {
+    padding:4em 2em 3em 2em;
+}
+
+.hero > img {
+    width:25%;
+    height:auto;
+    padding-bottom:1em;
+}
+
+.hero > h2 {
+    font-family:var(--lora-font);
+    font-style:italic;
+    font-weight:400;
+}
+
+button {
+    font-family:var(--poppins-font);
+    text-transform:uppercase;
+    color:black;
+    border-radius:30px;
+    background-color:white;
+    padding:.8rem 4rem;
+    font-size:1rem;
+    font-weight:300;
+    letter-spacing: 2px;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+}
+
+button:hover {
+    color:white;
+    background-color:var(--main-dark-color);
+}
+
+.img1-container {
+    position:relative;
+    width:450px;
+    height:360px;
+}
+
+.img1-container > img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.features {
+    background-color: #F7F7F7;
+    width:100%;
+    padding:var(--root-padding);
+    height:auto;
+    text-align:center;
+}
+
+.features-text {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.features > .features-text > h1 {
+    font-family:var(--poppins-font);   
+}
+
+.features h1 {
+    font-weight:300;
+    font-size:3rem;
+    padding-top:3rem;
+}
+
+.features > .features-text hr {
+    width:8%;
+}
+
+.features-text > p {
+    width:60%;
+    font-family: var(--lora-font);
+    font-style:italic;
+    font-size:1.4rem;
+    padding:2rem;
+}
