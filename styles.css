@@ -468,3 +468,44 @@ footer > ul > li {
     font-family:var(--poppins-font);
     padding:2rem 0;
 }
+
+/* GENERIC PAGE */
+
+.generic-header {
+    background-color: #F7F7F7;
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: var(--poppins-font);
+}
+
+.generic-header-text {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.generic-header > .generic-header-text > h1 {
+    font-weight:300;
+    font-size:3rem;
+    padding-top:3rem;
+}
+
+.generic-header > .generic-header-text hr {
+    width:8%;
+}
+
+.generic-header > .generic-header-text > img {
+    width:150%;
+    padding:2em 0;
+}
+
+.generic-header > p {
+    width:80%;
+    text-align: justify;
+    padding:3em 1.5em;
+    font-family: var(--lora-font);
+}
